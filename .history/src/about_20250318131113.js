@@ -1,7 +1,3 @@
-//about.js
-
-import chefImage from "./images/head-chef.png";
-
 function createAbout() {
   const aboutDiv = document.createElement("div");
   aboutDiv.classList.add("about");
@@ -16,9 +12,8 @@ function createAbout() {
   aboutContent.classList.add("about-content");
 
   // Add Chef
-
   const aboutImage = document.createElement("img");
-  aboutImage.src = chefImage;
+  aboutImage.src = "./images/head-chef.jpg";
   aboutImage.alt = "Our head chef";
   aboutContent.appendChild(aboutImage);
 
@@ -32,12 +27,12 @@ function createAbout() {
   aboutText.appendChild(paragraph1);
 
   const paragraph2 = document.createElement("p");
-  paragraph2.textContent =
+  paragraph1.textContent =
     "Our head chef, Hiroshi Kato, mastered fugu preparation in Japan over a decade. His bold vision crafts thrilling dishes, blending precision with creativity for an unmatched dining adventure.";
   aboutText.appendChild(paragraph2);
 
   const paragraph3 = document.createElement("p");
-  paragraph3.textContent =
+  paragraph1.textContent =
     "Legend says a shipwrecked sailor bet his life savings on blowfish here, won big, and funded Puffer’s Paradise. Now, his wild tale fuels our fearless culinary spirit.";
   aboutText.appendChild(paragraph3);
 
@@ -47,4 +42,4 @@ function createAbout() {
   return aboutDiv;
 }
 
-export default createAbout;
+export default createAbout

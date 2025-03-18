@@ -20,7 +20,7 @@ function initializeWebsite() {
   }
 
   function loadMenu() {
-    content.innerHTML = "";
+    content.innerHtml = "";
     content.appendChild(createMenu());
   }
 
@@ -65,7 +65,7 @@ function initializeWebsite() {
 
   //load home page by default when page first loads
   loadHome();
-  setActiveTab(navLinks[0]); //highlight home tab by default as well
+  selectActiveTab(navLinks[0]); //highlight home tab by default as well
 }
 
 

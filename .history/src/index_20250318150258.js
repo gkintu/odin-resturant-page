@@ -20,7 +20,7 @@ function initializeWebsite() {
   }
 
   function loadMenu() {
-    content.innerHTML = "";
+    content.innerHtml = "";
     content.appendChild(createMenu());
   }
 

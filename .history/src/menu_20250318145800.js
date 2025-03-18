@@ -10,7 +10,7 @@ function createMenu() {
     menuDiv.appendChild(menuTitle);
 
     //define menu categories 
-    const categories = ['Appetizers', 'Main Coursers', 'Desserts', 'Beverages'];
+    const categories = ['Appertizers', 'Main Coursers', 'Dessert', 'Beverages'];
 
     //Create a section for each category
     categories.forEach(category =>  {
@@ -38,9 +38,9 @@ function createMenu() {
             itemHeader.appendChild(itemName);
 
             const itemPrice = document.createElement('span');
-            itemPrice.classList.add('price')    
+            itemPrice.classList.add('price')
             itemPrice.textContent = item.price;
-            itemHeader.appendChild(itemPrice);
+            itemHeader.appendChild.add(itemPrice);
 
             menuItem.appendChild(itemHeader);
 

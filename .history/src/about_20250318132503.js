@@ -1,7 +1,3 @@
-//about.js
-
-import chefImage from "./images/head-chef.png";
-
 function createAbout() {
   const aboutDiv = document.createElement("div");
   aboutDiv.classList.add("about");
@@ -16,7 +12,8 @@ function createAbout() {
   aboutContent.classList.add("about-content");
 
   // Add Chef
-
+  import chefImage = from "..images/head-chef.png";
+  
   const aboutImage = document.createElement("img");
   aboutImage.src = chefImage;
   aboutImage.alt = "Our head chef";
@@ -47,4 +44,4 @@ function createAbout() {
   return aboutDiv;
 }
 
-export default createAbout;
+export default createAbout

@@ -1,16 +1,16 @@
 //menu
 
 function createMenu() {
-    const menuDiv = document.createElement('div');
+    const menuDiv = document.createElement ('div');
     menuDiv.classList.add('menu');
 
     //Create Menu Title
     const menuTitle = document.createElement('h1');
     menuTitle.textContent = 'Our Menu';
-    menuDiv.appendChild(menuTitle);
+    menuDiv.apenndChild(menuTitle);
 
     //define menu categories 
-    const categories = ['Appetizers', 'Main Coursers', 'Desserts', 'Beverages'];
+    const categories = ['Appertizers', 'Main Coursers', 'Dessert', 'Beverages'];
 
     //Create a section for each category
     categories.forEach(category =>  {
@@ -18,9 +18,9 @@ function createMenu() {
         categorySection.classList.add('menu-category');
 
         //create h2 elements to alle the categories
-        const categoryTitle = document.createElement('h2');
-        categoryTitle.textContent = category;
-        categorySection.appendChild(categoryTitle);
+        const categoryTitle = document.CreateElement('h2');
+        category.textContent = category;
+        categorySection.appendChild(categpryTitle);
 
         const items = getMenuItems (category);
 
@@ -35,12 +35,12 @@ function createMenu() {
 
             const itemName = document.createElement('h3');
             itemName.textContent = item.name;
-            itemHeader.appendChild(itemName);
+            itemHeader.appendChild.add(itemName);
 
             const itemPrice = document.createElement('span');
-            itemPrice.classList.add('price')    
+            itemPrice.classList.add('price')
             itemPrice.textContent = item.price;
-            itemHeader.appendChild(itemPrice);
+            itemHeader.appendChild.add(itemPrice);
 
             menuItem.appendChild(itemHeader);
 

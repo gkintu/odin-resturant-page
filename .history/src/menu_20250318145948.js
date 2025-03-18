@@ -10,7 +10,7 @@ function createMenu() {
     menuDiv.appendChild(menuTitle);
 
     //define menu categories 
-    const categories = ['Appetizers', 'Main Coursers', 'Desserts', 'Beverages'];
+    const categories = ['Appetizers', 'Main Coursers', 'Dessert', 'Beverages'];
 
     //Create a section for each category
     categories.forEach(category =>  {

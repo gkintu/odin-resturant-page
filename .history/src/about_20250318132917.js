@@ -1,6 +1,6 @@
 //about.js
 
-import chefImage from "./images/head-chef.png";
+import chefImage from "..images/head-chef.png";
 
 function createAbout() {
   const aboutDiv = document.createElement("div");
