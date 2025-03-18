@@ -9,22 +9,22 @@ function createContact() {
     contactTitle.textContent = 'Contact Us';
     contactDiv.appendChild(contactTitle);
 
-    // Create contact info section with address, phone and email
+    // Create contact info section with adress, phone and email
     const infoSection = document.createElement('div');
     infoSection.classList.add('contact-info');
 
     //Address section with icon
-    const address = document.createElement('div');
-    address.classList.add('info-item');
+    const adress = document.createElement('div');
+    adress.classList.add('info-item');
 
-    const addressIcon = document.createElement('span');
-    addressIcon.classList.add('info-item');
-    addressIcon.textContent = '📍';
-    address.appendChild(addressIcon);
+    const adressIcon = document.createElement('span');
+    adressIcon.classList.add('info-item');
+    adressIcon.textContent = '📍';
+    adress.appendChild(adressIcon);
 
-    const addressText = document.createElement('div');
-    addressText.innerHTML = `<h3>Address</h3><p>456 Ocean Pier Lane<br>Coral Bay, Seabound 67890</p>`;
-    address.appendChild(addressText);
+    const adressText = document.createElement('div');
+    adressText.innerHTML = `<h3>Address</h3><p>456 Ocean Pier Lane<br>Coral Bay, Seabound 67890</p>`;
+    adress.appendChild('adressText');
 
     // Phone block with icon
     const phone = document.createElement('div');
@@ -76,7 +76,7 @@ function createContact() {
 
     hours.forEach(item => {
         const hoursItem = document.createElement('li');
-        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}</span>`;
+        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}`;
         hoursList.appendChild(hoursItem);
     });
 

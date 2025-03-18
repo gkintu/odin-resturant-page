@@ -76,7 +76,7 @@ function createContact() {
 
     hours.forEach(item => {
         const hoursItem = document.createElement('li');
-        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}</span>`;
+        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}`;
         hoursList.appendChild(hoursItem);
     });
 

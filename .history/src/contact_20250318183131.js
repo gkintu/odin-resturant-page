@@ -24,7 +24,7 @@ function createContact() {
 
     const addressText = document.createElement('div');
     addressText.innerHTML = `<h3>Address</h3><p>456 Ocean Pier Lane<br>Coral Bay, Seabound 67890</p>`;
-    address.appendChild(addressText);
+    address.appendChild('addressText');
 
     // Phone block with icon
     const phone = document.createElement('div');
@@ -76,7 +76,7 @@ function createContact() {
 
     hours.forEach(item => {
         const hoursItem = document.createElement('li');
-        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}</span>`;
+        hoursItem.innerHTML = `<span class="day">${item.day}:</span><span class="time">${item.time}`;
         hoursList.appendChild(hoursItem);
     });
 
