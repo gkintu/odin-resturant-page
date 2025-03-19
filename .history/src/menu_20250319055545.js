@@ -60,7 +60,7 @@ function createMenu() {
             if (item.name.toLowerCase().includes('fugu')) {
                 const riskIndicator = document.createElement('span');
                 riskIndicator.classList.add('risk-indicator');
-                riskIndicator.textContent = "⚠️ Chef's specialty";
+                riskIndicator.textContent = '⚠️ Chef's specialty';
                 riskIndicator.style.display = 'block';
                 riskIndicator.style.marginTop = '8px';
                 riskIndicator.style.color = '#ff6b6b';

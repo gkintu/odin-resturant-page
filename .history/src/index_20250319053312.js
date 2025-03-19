@@ -3,7 +3,7 @@ import createHome from "./home";
 import createMenu from "./menu";
 import createContact from "./contact";
 import createAbout from "./about";
-import './styles.css';
+import './style.css';
 
 function initializeWebsite() {
   const content = document.getElementById("content");
@@ -64,8 +64,8 @@ function initializeWebsite() {
   });
 
   //load home page by default when page first loads
-  loadAbout();
-  setActiveTab(navLinks[1]); //highlight home tab by default as well
+  loadHome();
+  setActiveTab(navLinks[0]); //highlight home tab by default as well
 }
 
 

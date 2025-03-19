@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Main Content Area */
+#content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Home Page Styles */
+.home {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 5rem 2rem;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+}
+
+/* About Page Styles */
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.about-content img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+/* Contact Page Styles */
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info-item span {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.info-item div {
+  text-align: left;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hours {
+  margin-top: 3rem;
+}
+
+.hours h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hours ul {
+  list-style: none;
+}
+
+.hours li {
+  margin-bottom: 0.5rem;
+}
+
+.hours .day {
+  font-weight: bold;
+}
+
+/* Placeholder Menu Page Styles (Adjust as Needed) */
+.menu {
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header nav ul li {
+      margin-bottom: 0.5rem;
+  }
+
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-content img {
+      margin-bottom: 1rem;
+  }
+
+  .contact-info {
+      flex-direction: column;
+  }
+
+  .info-item {
+      margin-bottom: 1.5rem;
+  }
+
+  .home {
+      padding: 3rem 1rem;
+  }
+
+  .home h1 {
+      font-size: 2rem;
+  }
+
+  .home p {
+      font-size: 1.2rem;
+  }
+}

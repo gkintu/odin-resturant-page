@@ -65,7 +65,7 @@ function initializeWebsite() {
 
   //load home page by default when page first loads
   loadAbout();
-  setActiveTab(navLinks[1]); //highlight home tab by default as well
+  setActiveTab(navLinks[0]); //highlight home tab by default as well
 }
 
 

@@ -1,88 +1,68 @@
+//menu.js
+
 function createMenu() {
     const menuDiv = document.createElement('div');
     menuDiv.classList.add('menu');
 
-    // Create Menu Title
+    //Create Menu Title
     const menuTitle = document.createElement('h1');
     menuTitle.textContent = 'Our Menu';
     menuDiv.appendChild(menuTitle);
 
-    // Create container for all menu categories
-    const menuContainer = document.createElement('div');
-    menuContainer.classList.add('menu-container');
-    
-    // Define menu categories 
-    const categories = ['Appetizers', 'Main Courses', 'Desserts', 'Beverages'];
+    //define menu categories 
+    const categories = ['Appetizers', 'Main Coursers', 'Desserts', 'Beverages'];
 
-    // Create a section for each category
-    categories.forEach(category => {
+    //Create a section for each category
+    categories.forEach(category =>  {
         const categorySection = document.createElement('div');
         categorySection.classList.add('menu-category');
 
-        // Create h2 elements for categories
+        //create h2 elements to alle the categories
         const categoryTitle = document.createElement('h2');
         categoryTitle.textContent = category;
         categorySection.appendChild(categoryTitle);
 
-        // Get menu items for this category
-        const items = getMenuItems(category);
-        
-        // Create elements for menu items in a grid
-        const itemsGrid = document.createElement('div');
-        itemsGrid.classList.add('menu-grid');
+        const items = getMenuItems (category);
 
-        // Create elements for each menu item
+        //create elements for each menu item
         items.forEach(item => {
             const menuItem = document.createElement('div');
             menuItem.classList.add('menu-item');
 
-            // Create content container
-            const itemContent = document.createElement('div');
-            itemContent.classList.add('menu-item-content');
+            //Create header with name and price
+            const itemHeader = document.createElement('div');
+            itemHeader.classList.add('item-header');
 
-            // Create header with name
             const itemName = document.createElement('h3');
             itemName.textContent = item.name;
-            itemContent.appendChild(itemName);
+            itemHeader.appendChild(itemName);
 
-            // Add price
-            const itemPrice = document.createElement('div');
-            itemPrice.classList.add('price');
+            const itemPrice = document.createElement('span');
+            itemPrice.classList.add('price')    
             itemPrice.textContent = item.price;
-            itemContent.appendChild(itemPrice);
+            itemHeader.appendChild(itemPrice);
 
-            // Add item description
-            const itemDescription = document.createElement('p');
+            menuItem.appendChild(itemHeader);
+
+            //Add item description
+            const itemDescription  = document.createElement('div');
             itemDescription.textContent = item.description;
-            itemContent.appendChild(itemDescription);
+            menuItem.appendChild(itemDescription);
 
-            // Add risk indicator for fugu dishes
-            if (item.name.toLowerCase().includes('fugu')) {
-                const riskIndicator = document.createElement('span');
-                riskIndicator.classList.add('risk-indicator');
-                riskIndicator.textContent = "⚠️ Chef's specialty";
-                riskIndicator.style.display = 'block';
-                riskIndicator.style.marginTop = '8px';
-                riskIndicator.style.color = '#ff6b6b';
-                riskIndicator.style.fontStyle = 'italic';
-                itemContent.appendChild(riskIndicator);
-            }
+            categorySection.appendChild(menuItem);
+        })
 
-            menuItem.appendChild(itemContent);
-            itemsGrid.appendChild(menuItem);
-        });
-
-        categorySection.appendChild(itemsGrid);
-        menuContainer.appendChild(categorySection);
+        menuDiv.appendChild(categorySection);
     });
 
-    menuDiv.appendChild(menuContainer);
     return menuDiv;
+
 }
 
-// Helper function to organize menu data 
+//Helper function to  organize  menu data 
+
 function getMenuItems(category) {
-    // Menu data organized by category for Puffer's Paradise
+    // Menu data organized by category for Puffer’s Paradise
     const menuItems = {
         'Appetizers': [
             { name: 'Spicy Octopus Tempura', description: 'Crispy octopus bites with chili glaze and seaweed garnish', price: '$15' },

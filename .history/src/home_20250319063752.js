@@ -37,5 +37,3 @@ function createHome() {
   
     return homeDiv;
   }
-
-export default createHome;
