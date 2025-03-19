@@ -82,16 +82,18 @@ header nav ul a.active {
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
+
+.home p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .home-header p {
   font-size: 2.5rem; 
   margin-bottom: 2rem;
 }
 
-.home-content p {
-  font-size: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 /* About Page*/
 
@@ -261,13 +263,6 @@ header nav ul a.active {
 }
 
 /* Responsive Design */
-@media (max-width: 1057px) {
-  .home-header p {
-    font-size: 1.8rem; 
-  }
-}
-
-
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -289,8 +284,6 @@ header nav ul a.active {
   }
 
   .home-header p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
-
-

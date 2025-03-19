@@ -64,8 +64,8 @@ function initializeWebsite() {
   });
 
   //load home page by default when page first loads
-  loadHome();
-  setActiveTab(navLinks[0]); //highlight home tab by default as well
+  loadMenu();
+  setActiveTab(navLinks[2]); //highlight home tab by default as well
 }
 
 

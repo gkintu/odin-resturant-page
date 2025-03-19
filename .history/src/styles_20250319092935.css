@@ -263,7 +263,7 @@ header nav ul a.active {
 /* Responsive Design */
 @media (max-width: 1057px) {
   .home-header p {
-    font-size: 1.8rem; 
+    font-size: 1.5rem; 
   }
 }
 
@@ -289,7 +289,7 @@ header nav ul a.active {
   }
 
   .home-header p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 

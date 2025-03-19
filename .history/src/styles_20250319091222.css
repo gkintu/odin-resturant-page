@@ -62,7 +62,7 @@ header nav ul a.active {
 }
 
 .home-content {
-  padding: 0rem 0.5rem;
+  padding: 2rem 0;
 }
 
 .home-header {
@@ -82,12 +82,7 @@ header nav ul a.active {
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-.home-header p {
-  font-size: 2.5rem; 
-  margin-bottom: 2rem;
-}
-
-.home-content p {
+.home p {
   font-size: 1rem;
   max-width: 800px;
   margin: 0 auto;
@@ -261,13 +256,6 @@ header nav ul a.active {
 }
 
 /* Responsive Design */
-@media (max-width: 1057px) {
-  .home-header p {
-    font-size: 1.8rem; 
-  }
-}
-
-
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -287,10 +275,4 @@ header nav ul a.active {
   .home-header h1 {
     font-size: 2.5rem;
   }
-
-  .home-header p {
-    font-size: 1.3rem;
-  }
 }
-
-
